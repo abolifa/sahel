@@ -5,11 +5,11 @@ import { useState } from "react";
 import SplashScreen from "./components/splash-screen";
 
 function App() {
-  // const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
-  // if (loading) {
-  //   return <SplashScreen onFinish={() => setLoading(false)} />;
-  // }
+  if (loading) {
+    return <SplashScreen onFinish={() => setLoading(false)} />;
+  }
 
   return (
     <Routes>
