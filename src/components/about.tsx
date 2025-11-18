@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative w-full bg-[#fffaf0] text-[#1e1e1e] py-28 md:py-36 overflow-hidden"
+      className="relative w-full bg-gradient-to-b from-[#F5D87A] to-[#f1f1f1] py-28 md:py-36 overflow-hidden"
     >
       {/* Background effects */}
       <div className="absolute inset-0 -z-10">
@@ -80,14 +80,11 @@ const About = () => {
             عن <span className="text-[#EAAE30]">تطبيق ساهل</span>
           </h2>
           <p className="text-gray-700 leading-relaxed text-lg text-justify">
-            تطبيق <span className="font-semibold text-[#7EB5D8]">ساهل</span> هو
-            منصّة ذكية تربط المستخدمين بأفضل الحرفيين والفنيين في مختلف المجالات
-            — من السباكة والكهرباء إلى الصيانة العامة — بخطوة واحدة.
+            <span className="font-semibold text-[#7EB5D8]">ساهل</span> هو تطبيق
+            مبتكر يربطك مباشرة مع أقرب فني في منطقتك بدون عمولة أو وسيط.
           </p>
           <p className="text-gray-700 leading-relaxed text-lg text-justify">
-            هدفنا تسهيل حياتك اليومية عبر تقديم خدمات موثوقة وسريعة، بواجهة
-            حديثة وسهلة الاستخدام، تلبي احتياجاتك بجودة عالية.
-          </p>
+            </p>
 
           {/* feature icons */}
           <div className="grid grid-cols-3 gap-6 pt-6 text-center md:text-right">

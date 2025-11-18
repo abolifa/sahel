@@ -7,9 +7,10 @@ const Navbar = () => {
   const navs = [
     { label: "الرئيسية", href: "#hero" },
     { label: "عن التطبيق", href: "#about" },
-    { label: "مراحل التطبيق", href: "#roadmap" },
     { label: "المميزات", href: "#features" },
-    { label: "لمحة سريعة", href: "#preview" },
+    { label: "الخدمات", href: "#services" },
+    { label: "كيف يعمل ساهل", href: "#roadmap" },
+    { label: "لمحة عن التطبيق", href: "#preview" },
   ];
 
   const [scrolled, setScrolled] = useState(false);
@@ -28,13 +29,13 @@ const Navbar = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-white/90 backdrop-blur-lg shadow-[0_2px_20px_rgba(0,0,0,0.05)] py-2"
-          : "bg-transparent py-4"
+          ? "bg-white/90 backdrop-blur-lg shadow-[0_3px_25px_rgba(0,0,0,0.08)] py-3"
+          : "bg-white shadow-sm py-4"
       }`}
     >
       <div
         className={`flex items-center justify-between mx-auto max-w-7xl px-6 transition-all duration-300 ${
-          scrolled ? "scale-[0.98]" : "scale-100"
+          scrolled ? "scale-100" : "scale-100"
         }`}
       >
         {/* === Logo === */}
@@ -64,7 +65,7 @@ const Navbar = () => {
           ))}
           <a
             href="#notify"
-            className="px-5 py-2 rounded-full bg-[#7EB5D8] text-white font-normal shadow-md text-sm hover:bg-[#6ca8c9] transition"
+            className="px-5 py-3 rounded-full bg-[#7EB5D8] text-white font-normal shadow-md text-sm hover:bg-[#6ca8c9] transition"
           >
             اشترك في الإطلاق
           </a>
@@ -106,7 +107,7 @@ const Navbar = () => {
             ))}
             <a
               href="#notify"
-              className="px-6 py-2 text-sm font-normal rounded-full bg-[#7EB5D8] text-white hover:bg-[#6ca8c9] transition"
+              className="px-6 py-3 text-sm font-normal rounded-full bg-[#7EB5D8] text-white hover:bg-[#6ca8c9] transition"
               onClick={() => setOpen(false)}
             >
               اشترك في الإطلاق

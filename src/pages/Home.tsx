@@ -5,14 +5,16 @@ import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Notify from "@/components/notify";
 import Roadmap from "@/components/Roadmap";
+import Services from "@/components/services";
 
 const Home = () => {
   return (
     <>
       <Hero />
       <About />
-      <Roadmap />
       <Features />
+      <Services />
+      <Roadmap />
       <Notify />
       <AppPreview />
       <Footer />
