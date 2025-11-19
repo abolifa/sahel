@@ -1,35 +1,35 @@
 "use client";
 import { motion } from "framer-motion";
-import { Lightbulb, Wrench, Smartphone, Rocket } from "lucide-react";
+import { Lightbulb, Wrench, Smartphone} from "lucide-react";
 
 const milestones = [
   {
     icon: <Lightbulb className="w-8 h-8 text-[#EAAE30]" />,
-    title: "بداية الفكرة",
-    desc: "ولدت فكرة ساهل من حاجة حقيقية لتبسيط الوصول إلى الفنيين والحرفيين في ليبيا بطريقة موثوقة وسهلة.",
+    title: "اختر الخدمة المناسبة",
+    desc: "اختر نوع الخدمة التي تحتاجها مثل الكهرباء، السباكة، التكييف، التنظيف أو غيرها.",
   },
   {
     icon: <Wrench className="w-8 h-8 text-[#7EB5D8]" />,
-    title: "التحضير والبناء",
-    desc: "بدأنا في تصميم المنصة وتجربة الواجهة لتقديم تطبيق عصري يدمج بين السرعة والجمال في الأداء.",
+    title: "تواصل مباشرة مع الفني",
+    desc: "بيعرض لك ساهل أقرب الفنيين حسب موقعك، ويمكنك التواصل معهم مباشرة بدون وسيط.",
   },
   {
     icon: <Smartphone className="w-8 h-8 text-[#EAAE30]" />,
-    title: "التطوير والتجربة",
-    desc: "نقوم حالياً بتطوير تطبيق ساهل باحترافية عالية واختباره لضمان تجربة استخدام سلسة وآمنة.",
+    title: "اتفقوا على الوقت والتكلفة",
+    desc: "تفاهم مع الفني على السعر والموعد الذي يناسبك، ويمكنه زيارة المكان للمعاينة إذا لزم الأمر.",
   },
-  {
-    icon: <Rocket className="w-8 h-8 text-[#7EB5D8]" />,
-    title: "الإطلاق القادم",
-    desc: "قريباً سيتم إطلاق ساهل رسمياً — لتكون الخدمات في متناول يدك أينما كنت.",
-  },
+  // {
+  //   icon: <Rocket className="w-8 h-8 text-[#7EB5D8]" />,
+  //   title: "الإطلاق القادم",
+  //   desc: "قريباً سيتم إطلاق ساهل رسمياً — لتكون الخدمات في متناول يدك أينما كنت.",
+  // },
 ];
 
 const Roadmap = () => {
   return (
     <section
       id="roadmap"
-      className="relative w-full py-24 md:py-40 bg-[#FDF8E9] overflow-hidden"
+      className="relative w-full py-24 md:py-40 bg-gradient-to-b from-[#fff7e2] to-[#fdfdfd] overflow-hidden"
     >
       {/* === Background Auras (lighter on mobile) === */}
       <motion.div
@@ -74,7 +74,7 @@ const Roadmap = () => {
           transition={{ duration: 0.8 }}
           className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16"
         >
-          رحلة <span className="text-[#EAAE30]">تطبيق ساهل</span>
+          كيف يعمل <span className="text-[#EAAE30]">ساهل؟</span>
         </motion.h2>
 
         {/* === Timeline === */}

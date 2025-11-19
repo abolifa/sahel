@@ -5,7 +5,7 @@ const AppPreview = () => {
   return (
     <section
       id="preview"
-      className="relative w-full py-32 md:py-40 bg-[#fffef7] text-[#1e1e1e] overflow-hidden"
+      className="relative w-full py-32 md:py-40 bg-gradient-to-b from-[#f5f5f5] to-[#ffffff] text-[#1e1e1e] overflow-hidden"
     >
       {/* ===== Background glow layers ===== */}
       <motion.div
@@ -57,8 +57,8 @@ const AppPreview = () => {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-gray-700 text-base sm:text-lg max-w-xl mx-auto"
         >
-          تصميم حديث وسهل الاستخدام يضع احتياجاتك في المقدمة — ساهل يجعل كل خدمة
-          أقرب إليك.
+          تصميم حديث وسهل الاستخدام وتساعدك في الوصلو الي القني المناسب بدون
+          تعقيد — ساهل يجعل كل خدمة أقرب إليك.
         </motion.p>
       </div>
 
@@ -69,14 +69,14 @@ const AppPreview = () => {
           initial={{ opacity: 0, x: 60, rotate: 10 }}
           whileInView={{ opacity: 1, x: 0, rotate: 5 }}
           transition={{ duration: 0.8 }}
-          className="relative w-40 sm:w-[200px] md:w-[220px] lg:w-[250px] aspect-9/19 rounded-[2.5rem]  shadow-[0_0_60px_rgba(126,181,216,0.4)] overflow-hidden"
+          className="relative w-56 sm:w-[260px] md:w-[300px] lg:w-[340px] aspect-9/19 aspect-9/19 overflow-hidden"
         >
           <img
-            src="/screen-dark.png"
+            src="/apppreviewr.webp"
             alt="ساهل - تتبع الطلب"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-linear-to-t from-black/10 to-transparent" />
+          <div className="" />
         </motion.div>
 
         {/* Center phone (main) */}
@@ -84,14 +84,14 @@ const AppPreview = () => {
           initial={{ opacity: 0, scale: 0.9, y: 60 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.9 }}
-          className="relative w-[180px] sm:w-[220px] md:w-[260px] lg:w-[300px] aspect-9/19 rounded-[2.8rem] border-[6px] md:border-[7px] border-gray-900 shadow-[0_0_80px_rgba(234,174,48,0.4)] overflow-hidden"
+          className="relative w-56 sm:w-[260px] md:w-[300px] lg:w-[340px] aspect-9/19 overflow-hidden"
         >
           <img
-            src="/screen-center.png"
+            src="/apppreview.webp"
             alt="واجهة تطبيق ساهل الرئيسية"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-linear-to-t from-black/15 to-transparent" />
+          <div className="" />
         </motion.div>
 
         {/* Left phone */}
@@ -99,14 +99,14 @@ const AppPreview = () => {
           initial={{ opacity: 0, x: -60, rotate: -10 }}
           whileInView={{ opacity: 1, x: 0, rotate: -4 }}
           transition={{ duration: 0.8 }}
-          className="relative w-40 sm:w-[200px] md:w-[220px] lg:w-[250px] aspect-9/19 rounded-[2.5rem] border-[6px] border-gray-800 shadow-[0_0_60px_rgba(126,181,216,0.4)] overflow-hidden"
+          className="relative w-56 sm:w-[260px] md:w-[300px] lg:w-[340px] aspect-9/19  overflow-hidden"
         >
           <img
-            src="/screen-light.png"
+            src="/apppreviewl.webp"
             alt="ساهل - اختيار الخدمة"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-linear-to-t from-black/10 to-transparent" />
+          <div className="" />
         </motion.div>
       </div>
 

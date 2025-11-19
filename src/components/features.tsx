@@ -13,7 +13,7 @@ const features = [
   {
     icon: <MapPin className="w-8 h-8 text-[#7EB5D8]" />,
     title: "تحديد الموقع بدقة",
-    desc: "يعرفك تطبيق ساهل على أقرب فني أو حرفي في منطقتك بكل سهولة وسرعة.",
+    desc: "يعرفك تطبيق ساهل على أقرب فني في منطقتك بكل سهولة وسرعة.",
     color: "#7EB5D8",
   },
   {
@@ -37,13 +37,13 @@ const features = [
   {
     icon: <ShieldCheck className="w-8 h-8 text-[#7EB5D8]" />,
     title: "ثقة وأمان",
-    desc: "نراجع كل الحرفيين بعناية لضمان جودة الخدمة وأمان المستخدمين.",
+    desc: "نراجع كل الفنّيين بعناية لضمان جودة الخدمة وأمان المستخدمين.",
     color: "#7EB5D8",
   },
   {
     icon: <Star className="w-8 h-8 text-[#EAAE30]" />,
     title: "تقييمات ومراجعات",
-    desc: "اقرأ تقييمات المستخدمين السابقين واختر الحرفي الذي يناسب احتياجاتك.",
+    desc: "اقرأ تقييمات المستخدمين السابقين واختر الفنّي الذي يناسب احتياجاتك.",
     color: "#EAAE30",
   },
 ];
@@ -52,7 +52,7 @@ const Features = () => {
   return (
     <section
       id="features"
-      className="relative w-full bg-[#FFF9E3] text-[#1e1e1e] py-28 md:py-36 overflow-hidden"
+      className="relative w-full bg-[#fef6d4] text-[#1e1e1e] py-28 md:py-36 overflow-hidden"
     >
       {/* glowing background */}
       <motion.div

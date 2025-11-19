@@ -1,19 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
-import { Mail } from "lucide-react";
-import { toast } from "sonner";
 
-const Notify = () => {
-  const handleClick = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast.success("تم الاشتراك بنجاح! سنوافيك بالتحديثات.");
-  };
+const Download = () => {
   return (
     <section
       id="notify"
-      className="relative w-full py-28 md:py-36 bg-[#FFF9E3] text-[#1e1e1e] overflow-hidden"
+      className="relative w-full py-28 md:py-36 bg-gradient-to-b from-[#eaf7ff] to-[#f5fbff] text-[#1e1e1e] overflow-hidden"
     >
-      {/* ===== Background Auras ===== */}
+      {/* Auras */}
       <motion.div
         className="absolute top-[-150px] left-[-150px] w-[700px] h-[700px] bg-[#7EB5D8]/25 rounded-full blur-[200px] pointer-events-none -z-10"
         animate={{ y: [0, 40, 0], opacity: [0.6, 1, 0.6] }}
@@ -25,7 +19,7 @@ const Notify = () => {
         transition={{ duration: 14, repeat: Infinity }}
       />
 
-      {/* subtle particle sparks */}
+      {/* Soft floating particles */}
       {[...Array(12)].map((_, i) => (
         <motion.div
           key={i}
@@ -47,59 +41,76 @@ const Notify = () => {
         />
       ))}
 
-      {/* ===== Content ===== */}
-      <div className="relative z-10 container mx-auto px-6 md:px-12 flex flex-col items-center text-center">
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-6 md:px-12 flex flex-col items-center text-center max-w-2xl">
+        {/* Title */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
         >
-          كن أول من <span className="text-[#EAAE30]">يعرف</span> عند الإطلاق
+          حمّل التطبيق <span className="text-[#EAAE30]">الآن</span>
         </motion.h2>
+
+        {/* Description */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          className="text-lg text-gray-700 mb-6 leading-relaxed"
+        >
+          حمّل تطبيق{" "}
+          <span className="text-[#7EB5D8] font-semibold">ساهل</span> وابدأ في
+          طلب خدماتك بسهولة.  
+          تواصل مباشرة مع أقرب فني بدون وسيط، واتفق على السعر والوقت الذي يناسبك.
+        </motion.p>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="text-lg text-gray-700 mb-10 max-w-lg leading-relaxed"
+          className="text-gray-800 font-semibold text-lg mb-10"
         >
-          اشترك الآن ليصلك إشعار فور إطلاق تطبيق{" "}
-          <span className="text-[#7EB5D8] font-semibold">ساهل</span> رسمياً.
+          متاح الآن على متجر Google Play  
+          <br />
+          وسيتم إطلاق نسخة App Store قريبًا.
         </motion.p>
 
-        {/* form */}
-        <motion.form
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.8 }}
-          onSubmit={handleClick}
-          className="flex flex-col sm:flex-row items-stretch sm:items-center w-full max-w-xl bg-white/70 backdrop-blur-md border border-gray-200 shadow-md rounded-2xl sm:rounded-full overflow-hidden"
-        >
-          {/* Input field */}
-          <div className="flex items-center gap-2 px-4 py-3 w-full">
-            <Mail className="w-5 h-5 text-[#7EB5D8] shrink-0" />
-            <input
-              type="email"
-              required
-              placeholder="أدخل بريدك الإلكتروني"
-              className="flex-1 bg-transparent outline-none text-gray-800 placeholder-gray-500 text-base sm:text-lg"
-            />
-          </div>
-
-          {/* Button */}
-          <motion.button
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.96 }}
-            type="submit"
-            className="mt-2 sm:mt-0 sm:ml-2 px-6 py-3 text-base sm:text-lg rounded-xl sm:rounded-full bg-[#7EB5D8] text-white font-semibold shadow-md hover:bg-[#6ca8c9] transition-all duration-300"
+        {/* Store Buttons */}
+        <div className="flex flex-wrap justify-center items-center gap-6 mt-4">
+          {/* Google Play Button */}
+          <motion.a
+            href="https://play.google.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
+            className="cursor-pointer"
           >
-            أعلِمني
-          </motion.button>
-        </motion.form>
+            <img
+              src="/notify/playStor.webp" // أنتِ تضيفين المسار الصحيح لاحقاً
+              alt="Google Play"
+              className="w-44 md:w-52 drop-shadow-md hover:drop-shadow-xl transition"
+            />
+          </motion.a>
+
+          {/* App Store Button (disabled) */}
+          <motion.div
+            className="opacity-60 cursor-not-allowed"
+            whileHover={{ scale: 1.02 }}
+          >
+            <img
+              src="/notify/appStor.webp" // تضيفين المسار لاحقاً
+              alt="App Store Soon"
+              className="w-44 md:w-52 drop-shadow-sm"
+              title="ليس متوفر بعد"
+            />
+          </motion.div>
+        </div>
       </div>
     </section>
   );
 };
 
-export default Notify;
+export default Download;

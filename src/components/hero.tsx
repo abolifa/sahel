@@ -62,22 +62,18 @@ const Hero = () => {
         initial={{ opacity: 0, x: 80, rotate: 10, y: 40 }}
         animate={{ opacity: 1, x: 0, rotate: 5, y: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
-        className="hidden md:block relative mt-20 md:mt-12 w-[180px] md:w-[220px] lg:w-[250px] aspect-9/19
+        className="hidden md:block relative w-56 sm:w-[260px] md:w-[300px] lg:w-[340px] aspect-9/19
              -rotate-12 hover:rotate-[4deg] transition-transform duration-700
-             rounded-[2.8rem] overflow-hidden border-[6px] border-[#1e1e1e]/70
-             bg-linear-to-br from-[#fafafa] to-[#e6e6e6] shadow-[0_0_70px_rgba(254,254,254,0.45)]
+               overflow-hidden  
              pointer-events-none"
       >
         <div className="absolute inset-0 rounded-[2.8rem] ring-2 ring-[#7EB5D8]/50 blur-sm" />
         <div className="absolute -inset-6 bg-gradient-radial from-[#7EB5D8]/40 via-transparent to-transparent blur-3xl" />
-        <div className="absolute inset-0 rounded-[2.8rem] bg-linear-to-t from-transparent via-white/10 to-white/40 opacity-70 mix-blend-screen" />
         <img
-          src="/app-screen.png"
+          src="/hero.webp"
           alt="تطبيق ساهل"
           className="relative w-full h-full object-cover rounded-4xl shadow-inner select-none"
         />
-        <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-linear-to-t from-black/10 via-black/0 to-transparent" />
-        <div className="absolute bottom-[-60px] left-1/2 -translate-x-1/2 w-[180%] h-[150px] bg-[#EAAE30]/30 blur-[100px] opacity-60" />
       </motion.div>
     </section>
   );

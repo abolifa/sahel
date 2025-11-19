@@ -53,7 +53,9 @@ const Navbar = () => {
         </a>
 
         {/* === Desktop Nav Links === */}
-        <div className="hidden md:flex items-center gap-8 text-md font-medium text-[#1e1e1e]">
+        <div
+          className="hidden md:flex items-center gap-8 text-xl font-medium text-[#1e1e1e]"
+        >
           {navs.map((item, i) => (
             <a
               key={i}

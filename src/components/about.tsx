@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative w-full bg-gradient-to-b from-[#F5D87A] to-[#f1f1f1] py-28 md:py-36 overflow-hidden"
+      className="relative w-full bg-gradient-to-b from-[#fff8df] to-[#fefaf0] py-28 md:py-36 overflow-hidden"
     >
       {/* Background effects */}
       <div className="absolute inset-0 -z-10">
