@@ -56,7 +56,7 @@ const Footer = () => {
             />
             <p className="text-gray-300 max-w-md leading-relaxed text-sm md:text-base">
               تطبيق <span className="text-[#EAAE30] font-semibold">ساهل</span> —
-              منصّة ليبية ذكية تربطك بأفضل الحرفيين والفنيين في مختلف المجالات،
+              منصّة ليبية ذكية تربطك بأفضل التقنيين والفنيين في مختلف المجالات،
               بخطوات بسيطة وتجربة حديثة.
             </p>
             <div className="flex justify-end flex-row-reverse mt-5 w-full gap-4 mb-8">

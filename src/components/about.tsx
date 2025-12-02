@@ -94,7 +94,7 @@ const About = () => {
               <div className="p-3 bg-[#7EB5D8]/10 rounded-2xl">
                 <Wrench className="w-8 h-8 text-[#7EB5D8]" />
               </div>
-              <p className="font-semibold text-gray-800">حرفيون محترفون</p>
+              <p className="font-semibold text-gray-800">تقنيون محترفون</p>
             </motion.div>
 
             <motion.div
