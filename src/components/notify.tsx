@@ -5,7 +5,7 @@ const Download = () => {
   return (
     <section
       id="notify"
-      className="relative w-full py-28 md:py-36 bg-gradient-to-b from-[#eaf7ff] to-[#f5fbff] text-[#1e1e1e] overflow-hidden"
+      className="relative w-full py-28 md:py-36 bg-linear-to-b from-[#eaf7ff] to-[#f5fbff] text-[#1e1e1e] overflow-hidden"
     >
       {/* Auras */}
       <motion.div
@@ -60,10 +60,9 @@ const Download = () => {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="text-lg text-gray-700 mb-6 leading-relaxed"
         >
-          حمّل تطبيق{" "}
-          <span className="text-[#7EB5D8] font-semibold">ساهل</span> وابدأ في
-          طلب خدماتك بسهولة.  
-          تواصل مباشرة مع أقرب فني بدون وسيط، واتفق على السعر والوقت الذي يناسبك.
+          حمّل تطبيق <span className="text-[#7EB5D8] font-semibold">ساهل</span>{" "}
+          وابدأ في طلب خدماتك بسهولة. تواصل مباشرة مع أقرب فني بدون وسيط، واتفق
+          على السعر والوقت الذي يناسبك.
         </motion.p>
 
         <motion.p
@@ -72,7 +71,7 @@ const Download = () => {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-gray-800 font-semibold text-lg mb-10"
         >
-          متاح الآن على متجر Google Play  
+          متاح الآن على متجر Google Play
           <br />
           وسيتم إطلاق نسخة App Store قريبًا.
         </motion.p>
@@ -89,7 +88,7 @@ const Download = () => {
             className="cursor-pointer"
           >
             <img
-              src="/notify/playStor.webp" // أنتِ تضيفين المسار الصحيح لاحقاً
+              src="/notify/google.png"
               alt="Google Play"
               className="w-44 md:w-52 drop-shadow-md hover:drop-shadow-xl transition"
             />
@@ -101,7 +100,7 @@ const Download = () => {
             whileHover={{ scale: 1.02 }}
           >
             <img
-              src="/notify/appStor.webp" // تضيفين المسار لاحقاً
+              src="/notify/ios.png"
               alt="App Store Soon"
               className="w-44 md:w-52 drop-shadow-sm"
               title="ليس متوفر بعد"

@@ -1,12 +1,19 @@
 "use client";
 import { motion } from "framer-motion";
-import { Facebook, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Mail,
+  Phone,
+  MapPin,
+  Linkedin,
+} from "lucide-react";
+import { FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   const navs = [
     { label: "الرئيسية", href: "#hero" },
     { label: "عن التطبيق", href: "#about" },
-    { label: "مراحل التطبيق", href: "#roadmap" },
     { label: "المميزات", href: "#features" },
     { label: "لمحة سريعة", href: "#preview" },
   ];
@@ -39,7 +46,7 @@ const Footer = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col md:flex-row justify-between items-center md:items-start gap-10 mb-16"
+          className="flex flex-col md:flex-row justify-between items-start md:items-center gap-10 mb-16"
         >
           <div className="flex flex-col items-center md:items-start">
             <img
@@ -52,6 +59,39 @@ const Footer = () => {
               منصّة ليبية ذكية تربطك بأفضل الحرفيين والفنيين في مختلف المجالات،
               بخطوات بسيطة وتجربة حديثة.
             </p>
+            <div className="flex justify-end flex-row-reverse mt-5 w-full gap-4 mb-8">
+              {[
+                {
+                  icon: <Facebook className="w-5 h-5" />,
+                  href: "https://www.facebook.com/profile.php?id=61582987532101",
+                },
+                {
+                  icon: <Instagram className="w-5 h-5" />,
+                  href: "https://www.instagram.com/sahelapplibya",
+                },
+                {
+                  icon: <FaTiktok className="w-5 h-5" />,
+                  href: "https://www.tiktok.com/@sahel.app4?_r=1&_t=ZM-91pFQ7zhkBI",
+                },
+                { icon: <Linkedin className="w-5 h-5" />, href: "#" },
+                {
+                  icon: <Mail className="w-5 h-5" />,
+                  href: "mailto:info@sahel.ly",
+                },
+              ].map((item, i) => (
+                <motion.a
+                  key={i}
+                  href={item.href}
+                  whileHover={{ scale: 1.15 }}
+                  whileTap={{ scale: 0.95 }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-10 h-10 rounded-full border border-white/30 text-white hover:bg-white/10 transition"
+                >
+                  {item.icon}
+                </motion.a>
+              ))}
+            </div>
           </div>
 
           {/* Quick links */}
@@ -76,7 +116,7 @@ const Footer = () => {
 
           {/* Contact info */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-[#EAAE30] mb-2">
+            <h4 className="text-lg font-semibold text-start text-[#EAAE30] mb-2">
               تواصل معنا
             </h4>
             <div className="flex items-center gap-2 text-gray-300">
@@ -93,24 +133,6 @@ const Footer = () => {
             </div>
           </div>
         </motion.div>
-
-        {/* Social icons */}
-        <div className="flex justify-center md:justify-end gap-4 mb-8">
-          {[
-            { icon: <Facebook className="w-5 h-5" />, href: "#" },
-            { icon: <Instagram className="w-5 h-5" />, href: "#" },
-          ].map((item, i) => (
-            <motion.a
-              key={i}
-              href={item.href}
-              whileHover={{ scale: 1.15 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center justify-center w-10 h-10 rounded-full border border-white/30 text-white hover:bg-white/10 transition"
-            >
-              {item.icon}
-            </motion.a>
-          ))}
-        </div>
 
         {/* Copyright */}
         <div className="text-center text-sm text-gray-400 border-t border-white/10 pt-6">

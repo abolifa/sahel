@@ -5,7 +5,7 @@ const AppPreview = () => {
   return (
     <section
       id="preview"
-      className="relative w-full py-32 md:py-40 bg-gradient-to-b from-[#f5f5f5] to-[#ffffff] text-[#1e1e1e] overflow-hidden"
+      className="relative w-full py-32 md:py-40 bg-linear-to-b from-[#bfd8e0] to-[#a7c8d2] text-[#1e1e1e] overflow-hidden"
     >
       {/* ===== Background glow layers ===== */}
       <motion.div
@@ -57,7 +57,7 @@ const AppPreview = () => {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-gray-700 text-base sm:text-lg max-w-xl mx-auto"
         >
-          تصميم حديث وسهل الاستخدام وتساعدك في الوصلو الي القني المناسب بدون
+          تصميم حديث وسهل الاستخدام وتساعدك في الوصول الي التقني المناسب بدون
           تعقيد — ساهل يجعل كل خدمة أقرب إليك.
         </motion.p>
       </div>
@@ -69,10 +69,10 @@ const AppPreview = () => {
           initial={{ opacity: 0, x: 60, rotate: 10 }}
           whileInView={{ opacity: 1, x: 0, rotate: 5 }}
           transition={{ duration: 0.8 }}
-          className="relative w-56 sm:w-[260px] md:w-[300px] lg:w-[340px] aspect-9/19 aspect-9/19 overflow-hidden"
+          className="relative w-56 sm:w-[220px] md:w-[260px] lg:w-[300px] aspect-9/19 overflow-hidden"
         >
           <img
-            src="/apppreviewr.webp"
+            src="/screen-2.png"
             alt="ساهل - تتبع الطلب"
             className="w-full h-full object-cover"
           />
@@ -84,10 +84,10 @@ const AppPreview = () => {
           initial={{ opacity: 0, scale: 0.9, y: 60 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.9 }}
-          className="relative w-56 sm:w-[260px] md:w-[300px] lg:w-[340px] aspect-9/19 overflow-hidden"
+          className="relative w-56 mb-10 sm:w-60 md:w-[280px] lg:w-[320px]  aspect-9/19 overflow-hidden"
         >
           <img
-            src="/apppreview.webp"
+            src="/screen-1.png"
             alt="واجهة تطبيق ساهل الرئيسية"
             className="w-full h-full object-cover"
           />
@@ -99,10 +99,10 @@ const AppPreview = () => {
           initial={{ opacity: 0, x: -60, rotate: -10 }}
           whileInView={{ opacity: 1, x: 0, rotate: -4 }}
           transition={{ duration: 0.8 }}
-          className="relative w-56 sm:w-[260px] md:w-[300px] lg:w-[340px] aspect-9/19  overflow-hidden"
+          className="relative w-56 sm:w-[220px] md:w-[260px] lg:w-[300px]  aspect-9/19  overflow-hidden"
         >
           <img
-            src="/apppreviewl.webp"
+            src="/screen-3.png"
             alt="ساهل - اختيار الخدمة"
             className="w-full h-full object-cover"
           />

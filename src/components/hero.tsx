@@ -6,7 +6,7 @@ const Hero = () => {
     <section
       id="hero"
       // #F5D87A
-      className="relative flex flex-col md:flex-row items-center justify-around min-h-dvh overflow-hidden bg-gradient-to-b from-[#ececec] to-[#f5f5f5] text-[#1e1e1e] px-6 md:px-16 lg:px-24"
+      className="relative flex flex-col md:flex-row items-center justify-around min-h-dvh overflow-hidden bg-linear-to-b from-[#f3f3f3] to-[#e9e9e9] text-[#1e1e1e] px-6 md:px-16 lg:px-24"
     >
       {/* background pattern */}
       <div className="absolute inset-0 -z-10 opacity-[0.02] bg-[radial-gradient(circle_at_1px_1px,#7EB5D8_1px,transparent_0)] bg-size-[28px_28px] pointer-events-none" />
@@ -57,22 +57,20 @@ const Hero = () => {
         </div>
       </motion.div>
 
-      {/* right column — hidden on mobile */}
       <motion.div
         initial={{ opacity: 0, x: 80, rotate: 10, y: 40 }}
         animate={{ opacity: 1, x: 0, rotate: 5, y: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
-        className="hidden md:block relative w-56 sm:w-[260px] md:w-[300px] lg:w-[340px] aspect-9/19
-             -rotate-12 hover:rotate-[4deg] transition-transform duration-700
+        className="hidden md:block relative w-70 aspect-9/19
+             -rotate-12
                overflow-hidden  
-             pointer-events-none"
+             pointer-events-none mt-10"
       >
-        <div className="absolute inset-0 rounded-[2.8rem] ring-2 ring-[#7EB5D8]/50 blur-sm" />
-        <div className="absolute -inset-6 bg-gradient-radial from-[#7EB5D8]/40 via-transparent to-transparent blur-3xl" />
+        <div className="absolute -inset-6" />
         <img
-          src="/hero.webp"
+          src="/hero.png"
           alt="تطبيق ساهل"
-          className="relative w-full h-full object-cover rounded-4xl shadow-inner select-none"
+          className="relative w-full h-full object-cover"
         />
       </motion.div>
     </section>

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Lightbulb, Wrench, Smartphone} from "lucide-react";
+import { Lightbulb, Wrench, Smartphone } from "lucide-react";
 
 const milestones = [
   {
@@ -18,18 +18,13 @@ const milestones = [
     title: "اتفقوا على الوقت والتكلفة",
     desc: "تفاهم مع الفني على السعر والموعد الذي يناسبك، ويمكنه زيارة المكان للمعاينة إذا لزم الأمر.",
   },
-  // {
-  //   icon: <Rocket className="w-8 h-8 text-[#7EB5D8]" />,
-  //   title: "الإطلاق القادم",
-  //   desc: "قريباً سيتم إطلاق ساهل رسمياً — لتكون الخدمات في متناول يدك أينما كنت.",
-  // },
 ];
 
 const Roadmap = () => {
   return (
     <section
       id="roadmap"
-      className="relative w-full py-24 md:py-40 bg-gradient-to-b from-[#fff7e2] to-[#fdfdfd] overflow-hidden"
+      className="relative w-full py-24 md:py-40 bg-linear-to-b from-[#f3e7d3] to-[#e7d5ba] overflow-hidden"
     >
       {/* === Background Auras (lighter on mobile) === */}
       <motion.div

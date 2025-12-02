@@ -27,14 +27,14 @@ const Navbar = () => {
       initial={{ y: -60, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 w-full flex items-center h-18 z-50 transition-all duration-500 ${
         scrolled
           ? "bg-white/90 backdrop-blur-lg shadow-[0_3px_25px_rgba(0,0,0,0.08)] py-3"
           : "bg-white shadow-sm py-4"
       }`}
     >
       <div
-        className={`flex items-center justify-between mx-auto max-w-7xl px-6 transition-all duration-300 ${
+        className={`flex items-center justify-between container mx-auto px-6 transition-all duration-300 ${
           scrolled ? "scale-100" : "scale-100"
         }`}
       >
@@ -53,25 +53,24 @@ const Navbar = () => {
         </a>
 
         {/* === Desktop Nav Links === */}
-        <div
-          className="hidden md:flex items-center gap-8 text-xl font-medium text-[#1e1e1e]"
-        >
+        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#1e1e1e]">
           {navs.map((item, i) => (
             <a
               key={i}
               href={item.href}
-              className="hover:text-[#7EB5D8] transition"
+              className="hover:text-[#6dbf70] transition"
             >
               {item.label}
             </a>
           ))}
-          <a
-            href="#notify"
-            className="px-5 py-3 rounded-full bg-[#7EB5D8] text-white font-normal shadow-md text-sm hover:bg-[#6ca8c9] transition"
-          >
-            اشترك في الإطلاق
-          </a>
         </div>
+
+        <a
+          href="#notify"
+          className="px-5 hidden md:block py-3 rounded-full bg-[#6dbf70] text-white font-normal shadow-md text-sm hover:bg-[#2b6b2e] transition"
+        >
+          إشترك الآن
+        </a>
 
         {/* === Mobile Menu Button === */}
         <button
@@ -109,10 +108,10 @@ const Navbar = () => {
             ))}
             <a
               href="#notify"
-              className="px-6 py-3 text-sm font-normal rounded-full bg-[#7EB5D8] text-white hover:bg-[#6ca8c9] transition"
+              className="px-6 py-3 text-sm font-normal rounded-full bg-[#6dbf70] text-white hover:bg-[#2b6b2e] transition"
               onClick={() => setOpen(false)}
             >
-              اشترك في الإطلاق
+              إشترك الآن
             </a>
           </motion.div>
         )}

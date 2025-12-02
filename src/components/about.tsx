@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative w-full bg-gradient-to-b from-[#fff8df] to-[#fefaf0] py-28 md:py-36 overflow-hidden"
+      className="relative w-full bg-linear-to-b from-[#f8e6b0] to-[#f3d88a] py-28 md:py-36 overflow-hidden"
     >
       {/* Background effects */}
       <div className="absolute inset-0 -z-10">
@@ -83,8 +83,7 @@ const About = () => {
             <span className="font-semibold text-[#7EB5D8]">ساهل</span> هو تطبيق
             مبتكر يربطك مباشرة مع أقرب فني في منطقتك بدون عمولة أو وسيط.
           </p>
-          <p className="text-gray-700 leading-relaxed text-lg text-justify">
-            </p>
+          <p className="text-gray-700 leading-relaxed text-lg text-justify"></p>
 
           {/* feature icons */}
           <div className="grid grid-cols-3 gap-6 pt-6 text-center md:text-right">
