@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 const Hero = () => {
-  const handleSoonEffect = () => {};
   return (
     <section
       id="hero"
@@ -45,15 +44,18 @@ const Hero = () => {
         </h1>
 
         <div className="flex flex-wrap gap-4 pt-4">
-          <button
-            onClick={handleSoonEffect}
+          <a
+            href="#notify"
             className="px-8 py-3 rounded-full bg-[#7EB5D8] text-gray-900 font-semibold shadow-lg shadow-[#7EB5D8]/20 hover:shadow-[#7EB5D8]/50 transition-all cursor-pointer"
           >
             حمّل التطبيق
-          </button>
-          <button className="px-8 py-3 rounded-full border-2 border-gray-900 text-gray-900 font-semibold hover:bg-[#EAAE30]/10 transition-all cursor-pointer">
+          </a>
+          <a
+            href="#about"
+            className="px-8 py-3 rounded-full border-2 border-gray-900 text-gray-900 font-semibold hover:bg-[#EAAE30]/10 transition-all cursor-pointer"
+          >
             اكتشف المزيد
-          </button>
+          </a>
         </div>
       </motion.div>
 
